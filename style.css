@@ -1,0 +1,107 @@
+:root {
+    --text: #e6ecef;
+    --background: #080b0d;
+    --primary: #9ab1c1;
+    --secondary: #151d23;
+    --accent: #6488a0;
+}
+
+/* Main page */
+
+h1 {
+    font-family: 'Space Mono', monospace;
+    color: var(--text);
+}
+
+p {
+    font-family: 'Space Mono', monospace;
+    color: var(--text);
+}
+
+body {
+    background-color: var(--background);
+}
+
+
+
+
+/* Hacked Text Effect */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hackedText {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(2rem, 7vw, 7rem);
+    color: var(--text);
+
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    padding: 1%;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+#hackedText:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+
+
+/* SVG Images */
+#images {
+    z-index: -10;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#Layer1 {
+    transform: translateY(-50%);
+    margin: -7px;
+    z-index: -10;
+
+}
+
+/* Nav Bar */
+#laserNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: var(--secondary);
+    padding: 1%;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+#navBar:hover {
+    background-color: var(--accent);
+}
+
+#linkNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #080b0d;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#linkNav:hover {
+    background-color: var(--primary);
+}
