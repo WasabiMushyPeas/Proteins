@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
 :root {
-    --text: #e6ecef;
-    --background: #080b0d;
-    --primary: #9ab1c1;
-    --secondary: #151d23;
-    --accent: #6488a0;
+    --text: #f9f0f5;
+    --background: #0b0408;
+    --primary: #59c08e;
+    --secondary: #080f16;
+    --accent: #41aa77;
 }
 
 /* Main page */
@@ -22,6 +24,15 @@ body {
     background-color: var(--background);
 }
 
+/* Title */
+.title {
+    background-color: var(--secondary);
+    padding: 3%;
+    margin: 1%;
+    margin-top: calc(6% + 60px);
+    border-radius: 30px;
+}
+
 
 
 
@@ -37,7 +48,6 @@ body {
     font-family: 'Space Mono', monospace;
     font-size: clamp(2rem, 7vw, 7rem);
     color: var(--text);
-
     border-radius: clamp(0.4rem, 0.75vw, 1rem);
     padding: 1%;
     transition: 0.2s;
@@ -49,25 +59,12 @@ body {
     color: var(--background);
 }
 
-
-
-/* SVG Images */
-#images {
-    z-index: -10;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
-
-#Layer1 {
-    transform: translateY(-50%);
-    margin: -7px;
-    z-index: -10;
-
-}
-
 /* Nav Bar */
 #laserNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +78,7 @@ body {
     width: 80%;
     background-color: var(--secondary);
     padding: 1%;
-    border-radius: 30px;
+    border-radius: 10px;
     transition: 0.5s;
 }
 
@@ -94,9 +91,9 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
     background-color: #080b0d;
     border-radius: 10px;
     transition: 0.2s;
@@ -104,4 +101,12 @@ body {
 
 #linkNav:hover {
     background-color: var(--primary);
+}
+
+#clickableLink {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,5 +1,8 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@#$%^&*()_+`1234567890-=[]{}|;':,./<>?";
 
+
+
+
 let interval = null;
 let onHeader = true;
 
@@ -29,30 +32,5 @@ document.querySelector("h1").onmouseover = event => {
         }
         iteration += 1 / 3;
     }, 35);
-
-}
-
-
-// Pulse Effect
-image = document.getElementById("Layer1");
-setInterval(pulse, 50);
-i = 0;
-reverse = false;
-
-function pulse() {
-    image.style["background-image"] = "linear-gradient(#080b0d, rgba(154, 177, 193, " + i + "), #080b0d)";
-
-    if (i >= 0.3) {
-        reverse = true;
-    }
-    if (i <= 0) {
-        reverse = false;
-    }
-
-    if (reverse) {
-        i -= 0.005;
-    } else {
-        i += 0.005;
-    }
 
 }
