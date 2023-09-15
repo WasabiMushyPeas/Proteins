@@ -17,6 +17,7 @@ h1 {
 
 h2 {
     font-family: 'Space Mono', monospace;
+    font-size: 35px;
     color: var(--text);
 }
 
@@ -45,6 +46,29 @@ body {
     margin-top: calc(6% + 60px);
     border-radius: 30px;
 }
+
+/* Sections */
+#sectionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    background-color: var(--secondary);
+    padding: 1%;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin: 40px;
+}
+
+#contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 3%;
+}
+
 
 
 
@@ -82,6 +106,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    z-index: 20;
 }
 
 #navBar {
@@ -131,10 +156,4 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 95%;
-    background-color: var(--secondary);
-    padding: 1%;
-    border-radius: 30px;
-    transition: 0.5s;
-    margin: 40px;
 }
