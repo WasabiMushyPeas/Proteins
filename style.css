@@ -43,7 +43,7 @@ body {
     width: 90%;
     padding: 3%;
     margin: 1%;
-    margin-top: calc(6% + 60px);
+    margin-top: calc(5% + 50px);
     border-radius: 30px;
 }
 
@@ -72,7 +72,7 @@ body {
 img {
     width: 100%;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 10px;
     transition: 0.5s;
 }
 
@@ -80,6 +80,28 @@ img:hover {
     transform: scale(1.02);
     background-color: var(--accent);
 }
+
+#leftImg {
+    margin: 3%;
+    margin-right: 10%;
+}
+
+#rightText {
+    margin: 3%;
+    margin-left: 10%;
+}
+
+#elementLink {
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.2s;
+}
+
+#elementLink:hover {
+    color: var(--accent);
+    padding: 0 5px;
+}
+
 
 
 
@@ -108,6 +130,11 @@ img:hover {
     color: var(--background);
 }
 
+
+
+
+
+
 /* Nav Bar */
 #laserNav {
     position: fixed;
@@ -127,13 +154,13 @@ img:hover {
     justify-content: center;
     width: 80%;
     background-color: var(--secondary);
-    padding: 1%;
     border-radius: 10px;
     transition: 0.5s;
 }
 
 #navBar:hover {
     background-color: var(--accent);
+    scale: 1.01;
 }
 
 #linkNav {
@@ -161,6 +188,11 @@ img:hover {
     justify-content: center;
     text-decoration: none;
 }
+
+
+
+
+
 
 /* Header */
 
