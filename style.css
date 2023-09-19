@@ -17,7 +17,13 @@ h1 {
 
 h2 {
     font-family: 'Space Mono', monospace;
-    font-size: 35px;
+    font-size: 40px;
+    color: var(--text);
+}
+
+h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 25px;
     color: var(--text);
 }
 
@@ -82,13 +88,27 @@ img:hover {
 }
 
 #leftImg {
-    margin: 3%;
+    margin: 5%;
     margin-right: 10%;
+    height: 110%;
+    width: 110%;
 }
 
 #rightText {
     margin: 3%;
     margin-left: 10%;
+}
+
+#leftText {
+    margin: 3%;
+    margin-right: 10%;
+}
+
+#rightImg {
+    margin: 5%;
+    margin-left: 10%;
+    height: 110%;
+    width: 110%;
 }
 
 #elementLink {
@@ -102,6 +122,15 @@ img:hover {
     padding: 0 5px;
 }
 
+#staticLink {
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.2s;
+}
+
+#staticLink:hover {
+    color: var(--accent);
+}
 
 
 
