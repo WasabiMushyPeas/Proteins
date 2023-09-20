@@ -32,6 +32,11 @@ p {
     color: var(--text);
 }
 
+li {
+    font-family: 'Space Mono', monospace;
+    color: var(--text);
+}
+
 body {
     background-color: var(--background);
 }
@@ -94,6 +99,13 @@ img:hover {
     width: 110%;
 }
 
+.leftImgLarge {
+    margin: 5%;
+    margin-right: 10%;
+    height: 60%;
+    width: 60%;
+}
+
 .rightText {
     margin: 3%;
     margin-left: 10%;
@@ -109,6 +121,13 @@ img:hover {
     margin-left: 10%;
     height: 110%;
     width: 110%;
+}
+
+.rightImgLarge {
+    margin: 5%;
+    margin-left: 10%;
+    height: 60%;
+    width: 60%;
 }
 
 .elementLink {
